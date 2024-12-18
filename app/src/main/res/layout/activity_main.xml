@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/iv_eaut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logo_eaut"
+        android:layout_margin="6dp"
+        android:contentDescription="EAUT" />
+    <ListView
+        android:id="@+id/lv_todos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/iv_eaut"
+        android:layout_above="@id/btn_newtodo"
+        android:layout_margin="4dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_newtodo"
+        android:text="Thêm công việc"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="6dp"
+        />
+</RelativeLayout>
